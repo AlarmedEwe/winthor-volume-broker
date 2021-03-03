@@ -2,8 +2,10 @@ const {app, BrowserWindow} = require('electron');
 
 function createWindow() {
     const window = new BrowserWindow({
-        width:  800,
+        width:  450,
         height: 450,
+        minWidth: 450,
+        minHeight: 450,
         frame:  false,
         icon:   __dirname + 'favicon.png',
         webPreferences: {

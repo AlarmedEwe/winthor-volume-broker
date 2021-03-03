@@ -8,11 +8,43 @@
 body {
   height: 100vh;
   overflow: hidden;
+  font-family: Arial, sans-serif;
 }
 
 main {
   height: calc(100% - 37px);
   margin-top: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #191a21;
+}
+
+#form {
+  padding: 10px 20px 20px;
+  border-radius: 5px;
+  text-align: center;
+  color: #191a21;
+  background-color: #6272a4;
+}
+#form h1, #form input {
+  margin-bottom: 1em;
+}
+#form input, #form button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #191a21;
+}
+#form input:focus, #form input:active, #form button:focus, #form button:active {
+  box-shadow: 0 0 5px 2px #191a21;
+}
+#form label, #form input {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+#form button {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
