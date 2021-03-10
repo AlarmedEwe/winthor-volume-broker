@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/AlarmedEwe/winthor-volume-broker#readme",
   "dependencies": {
+    "@electron/remote": "^1.0.4",
     "oracledb": "^5.1.0"
   }
 }

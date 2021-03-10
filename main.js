@@ -1,4 +1,5 @@
 const {app, BrowserWindow} = require('electron');
+require('@electron/remote/main').initialize();
 
 function createWindow() {
     const window = new BrowserWindow({
@@ -9,12 +10,13 @@ function createWindow() {
         frame:  false,
         icon:   __dirname + 'favicon.png',
         webPreferences: {
-            nodeIntegration: true,
+            nodeIntegration:    true,
             enableRemoteModule: true
+            , contextisolation: true
         }
     });
     
-    // window.webContents.openDevTools();
+    window.webContents.openDevTools();
     window.removeMenu();
     window.loadFile('src/index.html');
 }
